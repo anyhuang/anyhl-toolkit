@@ -1,17 +1,17 @@
 {
   "productName": "anyhl-toolkit",
   "version": "0.0.0",
-  "identifier": "com.tauri.dev",
+  "identifier": "com.tauri.test",
   "build": {
-    "beforeDevCommand": "bun run dev",
+    "beforeDevCommand": "pnpm run dev:ui",
+    "beforeBuildCommand": "pnpm run build:ui",
     "devUrl": "http://localhost:1420",
-    "beforeBuildCommand": "bun run build",
-    "frontendDist": "../dist"
+    "frontendDist": "../ui/dist"
   },
   "app": {
     "windows": [
       {
-        "title": "AnyHL Toolkit",
+        "title": "黄某人的作战实验室",
         "width": 1920,
         "height": 1080
       }
